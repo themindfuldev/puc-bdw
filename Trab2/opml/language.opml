@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<opml version="1.0">
+  <head>
+    <title>Language Feeds</title>
+    <dateCreated>Tue, 07 Jul 2009 19:25:53 -0400</dateCreated>
+  </head>
+  <body>
+    <outline version="RSS" text="Spanish Language Guide" title="Spanish Language Guide" xmlUrl="http://z.about.com/6/g/spanish/b/rss2.xml" htmlUrl="http://spanish.about.com/" category="Language" type="rss" />
+    <outline version="RSS" text="Rolling R&#039;s" title="Rolling R&#039;s" xmlUrl="http://feeds.feedburner.com/rollingrs/" htmlUrl="http://www.rollingrs.com/" category="Language" type="rss" />
+    <outline version="RSS" text="Spanish phrase of the day" title="Spanish phrase of the day" xmlUrl="http://odeo.com/channel/40039/rss" htmlUrl="http://spanishphraseoftheday.blogspot.com/" category="Language" type="rss" />
+    <outline version="RSS" text="Chinesepod" title="Chinesepod" xmlUrl="http://chinesepod.com/lessons/feed/" htmlUrl="http://www.chinesepod.com/" category="Language" type="rss" />
+    <outline version="RSS" text="Langsam gesprochene Nachrichten" title="Langsam gesprochene Nachrichten" xmlUrl="http://rss.dw-world.de/xml/podcast_langsam_gesprochene_nachrichten" htmlUrl="http://www.dw-world.de/dw/0,,8030,00.html?maca=de-podcast_langsam_gesprochene_nachrichten-775-xml-mrss" category="Language" type="rss" />
+    <outline version="RSS" text="Word of the Day" title="Word of the Day" xmlUrl="http://dictionary.reference.com/wordoftheday/wotd.rss" htmlUrl="http://www.dictionary.com/wordoftheday/" category="Language" type="rss" />
+    <outline version="RSS" text="Language Log" title="Language Log" xmlUrl="http://languagelog.ldc.upenn.edu/nll/?feed=rss2" htmlUrl="http://itre.cis.upenn.edu/~myl/languagelog/" category="Language" type="rss" />
+  </body>
+</opml>

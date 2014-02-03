@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+      body { background-color: #eee; font: 80% Verdana,arial,sans-serif; }
+      h1 { font-size: 100%; font-weight: bold; }
+      p { font-size: 80%; padding-left: 1em; }
+      a { text-decoration: none; }
+      p.close { text-align: right; }
+      p.close a { color: #79B30B; }
+    </style>
+    <title>Rnews Help</title>
+  </head>
+  <body>
+    <!-- User Preferences -->
+    <a name="prefs-timeout"><h1>Prefs: Re-check Sources Time</h1></a>
+    <p>Feeds are downloaded and checked for new articles no more often than this setting allows.  A longer delay is more polite to the feed servers.</p>
+    <p class="close"><a href="javascript:window.close();">&lt;close window&gt;</a></p>
+
+    <a name="prefs-links"><h1>Prefs: Maximum Articles</h1></a>
+    <p>Rnews only keeps up to this number of old articles for each feed.  If the value is 0, all old articles are saved.  That can take a lot of space eventually.  You can purge a single feed in the Other Options section of the preferences screen.</p>
+    <p class="close"><a href="javascript:window.close();">&lt;close window&gt;</a></p>
+
+    <a name="prefs-stats"><h1>Prefs: Feed Statistics</h1></a>
+    <p>Rnews can attempt to gauge how popular your feeds are (with you).  It counts the number of times you expand a headline or click through to an article, versus the total number of articles in the feed, expressed roughly as the "percentage of articles you read".  Since you can both expand and click through, and that multiple times, the score can exceed 100.</p>
+    <p class="close"><a href="javascript:window.close();">&lt;close window&gt;</a></p>
+
+    <a name="prefs-headlines"><h1>Prefs: Default Headlines</h1></a>
+    <p>This many article headlines are shown in the main view, even if more are available by clicking the "show more" link.  It can be overridden for a particular feed by editing that feed's properties.</p>
+    <p>Also, clicking "show more" adds this many new headlines at a time. Keep clicking to go back to older and older articles.</p>
+    <p class="close"><a href="javascript:window.close();">&lt;close window&gt;</a></p>
+
+    <a name="prefs-images"><h1>Prefs: Site Images</h1></a>
+    <p>Feeds can include a link to a site image.  If this option is selected, the image will be shown in the feed header.  This can be overridden for a particular feed by editing the link URL to point to something else, like "img/xml.png".</p>
+    <p class="close"><a href="javascript:window.close();">&lt;close window&gt;</a></p>
+
+
+    <!-- Add Feed -->
+    <a name="add-rss"><h1>Feeds: RSS/Atom Link</h1></a>
+    <p>This link is the bare minimum information needed to add a new feed.  If the title, main page, and image links are not given, they will be made up from the feed itself.  You can always edit the feed to change it.</p>
+    <p class="close"><a href="javascript:window.close();">&lt;close window&gt;</a></p>
+
+
+    <!-- Search -->
+    <a name="search"><h1>Search: Phrase</h1></a>
+    <p>Currently, this is a plain keyword search.  No wildcards.  No boolean logic.  The words will be searched for <i>as given</i>, except that if they are all lowercase, case will be ignored.</p>
+    <p class="close"><a href="javascript:window.close();">&lt;close window&gt;</a></p>
+
+    <a name="search-contents"><h1>Search: Contents</h1></a>
+    <p>When this option is selected, the contents of the articles will also be searched, which is slower.  Otherwise, only the headlines are searched.</p>
+    <p class="close"><a href="javascript:window.close();">&lt;close window&gt;</a></p>
+
+    <!-- Security -->
+    <a name="security-perms"><h1>Security: File Permissions</h1></a>
+    <p>The file <tt>install.php</tt> should not be readable after installation, since it exposes the database and add-user passwords.  On Linux/Unix systems you can use <tt>chmod 600 install.php</tt> to achieve this.  On Windows, you may have to move the file out of the folder to make up for a PHP bug that ignores certain Windows ACLs.</p>
+    <p>The file <tt>inc/config_user.php</tt> should not be writable.  This is to prevent someone from overwriting the configuration.  On Linux/Unix systems, use <tt>chmod og-w inc/config_user.php</tt>. On Windows, set the <i>Read Only</i> attribute on the file.</p>
+    <p class="close"><a href="javascript:window.close();">&lt;close window&gt;</a></p>
+
+  </body>
+</html>

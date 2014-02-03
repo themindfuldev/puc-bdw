@@ -1,0 +1,5 @@
+.clearfix { height:1px; } /* hasLayout? */
+.wide { margin-right:-5px; } /* 1px off,no border overwrite*/
+/* float double-margin bug: */
+.feed, .feedwide, .wide, .categoryHead h2, .feedhead .feedtitle, .feedhead .feedimg,
+p.info, p.all, .actions, .itembar .icons, .itembar .info { display:inline; }

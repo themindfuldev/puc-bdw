@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<opml version="1.0">
+  <head>
+    <title>Amusement Feeds</title>
+    <dateCreated>Tue, 07 Jul 2009 19:26:52 -0400</dateCreated>
+  </head>
+  <body>
+    <outline version="RSS" text="Quotes of the Day" title="Quotes of the Day" xmlUrl="http://feeds.feedburner.com/quotationspage/qotd" htmlUrl="http://www.quotationspage.com/qotd.html" category="Amusement" type="rss" />
+    <outline version="RSS" text="Snopes" title="Snopes" xmlUrl="http://www.snopes.com/info/whatsnew.xml" htmlUrl="http://www.snopes.com/info/whatsnew.asp" category="Amusement" type="rss" />
+    <outline version="RSS" text="Rotten Tomatoes" title="Rotten Tomatoes" xmlUrl="http://i.rottentomatoes.com/syndication/rss/complete_movies.xml" htmlUrl="http://www.rottentomatoes.com/" category="Amusement" type="rss" />
+    <outline version="RSS" text="The Food Section" title="The Food Section" xmlUrl="http://www.thefoodsection.com/foodsection/index.rdf" htmlUrl="http://www.thefoodsection.com/foodsection/" category="Amusement" type="rss" />
+    <outline version="RSS" text="Dilbert Daily Strip" title="Dilbert Daily Strip" xmlUrl="http://feeds.feedburner.com/DilbertDailyStrip" htmlUrl="http://dilbert.com/" category="Amusement" type="rss" />
+  </body>
+</opml>

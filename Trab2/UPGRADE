@@ -1,0 +1,40 @@
+0.9x to 1.00:
+  As below for 0.8x to 0.9x, steps 1-6.
+
+
+0.8x to 0.9x:
+
+  1. Untar 0.9x into a new folder.
+  2. Copy inc/config_user.php from 0.8x to the new folder.  As usual, if you
+     modify inc/config.php, you'll have to manually merge it.
+  3. If you use cached images, move the old 'img/feeds' (or whatever you have
+     configured) into the new installation folder.
+  4. Visit the 0.9x install.php.
+  5. The DB will be upgraded automatically after confirming the DB settings.
+  6. Restore proper permissions on inc/config_user.php and install.php.
+
+
+0.80 to 0.81:
+
+  No changes needed.
+
+
+0.72 to 0.80:
+
+  The DB schema has changed in several ways.  The preferred upgrade procedure is:
+   - save your feed list by exporting to OPML,
+   - install 0.80 using a different database,
+   - add your user account, and
+   - import your feeds from the OPML file.
+   - if all is well, nuke your old database (drop database rnews_db)
+
+
+0.61 - 0.63 to 0.7:
+
+  if you are upgrading to rnews-0.7 from .61 - .63, you should not have to
+  change your database structure manually - rnews will do that for.
+
+  however, if you have trouble, I recommend you nuke the database and start
+  from scratch. (make sure to save your subscriptions first!)
+
+  ( drop database rnews_db; create database rnews_db; )

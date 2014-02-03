@@ -1,0 +1,186 @@
+July 10, 2009: version 1.01
+  - workaround MySQL index limitation; minor DB change
+
+July 7, 2009:  version 1.00
+  features:
+   * filter option to show only feeds with new articles
+   * item toolbar for marking favorites, read, older-read, deleting,
+     changing font, direct link, and showing article publication date
+   * added option for snippets of article contents
+   * UTF-8 support for proper display of international feeds
+   - search bar is context-sensitive, ie, searches are limited to
+     category or feed being viewed (unless using advanced search)
+   - guest/default users cannot mutate feed/article state, but can view
+   - add link to next-in-category on the "see all" page of a feed
+   - cron script for updating by command-line on the server
+  minor:
+   - add another feed healing heuristic and retries
+   - add more error messages when fetching fails
+   - cleaner opacity for status msg
+   - move date format string to config
+   - save current date/time for articles without valid pubdate
+   - added &async=0 to override AJAX feed loading, also detect
+     Javascript capability at login
+   - add feed bundles for importing
+  bugs:
+   - png feed images were not saved
+   - url encoding was wrong in some cases
+   - fixed url redirect page
+   - fixed include inversion in ajax.php for update
+   - fixed use of curl for https feeds
+   - fixed article ordering inconsistency, dissappear/reappear bug
+   - fixed encoding bug on opml export
+
+
+June 7, 2008:  firefox extension version 0.92:
+   - fixed bogus version num, had to bump FF version
+
+
+June 6, 2008:  version 0.92, and firefox extension version 0.91:
+  drop-in replacement for 0.90/0.91
+  bugs:
+   - remove quotes from CREATE DATABASE sql, affects new installation only
+   - empty article added when feed is purged of too many articles
+  minor features:
+   - show feed warnings/errors in AJAX loading, link to edit
+   - show link to RSS enclosures in description
+   - accept gzipped encoding for RSS/Atom feeds
+   - update extension for compatibility with Firefox 3.0rc2
+
+
+May 1, 2008: version 0.91:
+  minor bug fix: static db::create() improperly referenced $this
+  add feed heal attempt for 'name expected' (plain '&' in feed)
+  drop-in replacement for 0.90
+
+
+April 26, 2008: version 0.90:
+  new features:
+    o score feed popularity (expands and clicks)
+    o sort by score or name
+    o basic keyword search of headlines and contents
+    o make feed full width (block view)
+    o wide block view
+    o asynchronous update (AJAX) of new feed articles
+    o cleaner styling with rollover icons
+    o upgrades automatically from 0.8x  (see UPGRADING)
+    o bookmarklets and Firefox extension for easy feed adding
+    o added online help
+    o index.php now goes to user's default category automatically
+    o added heuristics for fixing broken feeds
+    o added user option to open links in a new window
+  security:
+    o make IP locking in cookie optional
+  bugs fixed:
+    o some IE-only style bugs fixed
+    o fix unsecure to secure to unsecure redirecting
+    o fix redirect of path with trailing /
+    o remove deprecated call to mysql_create_db
+    o fix disappear/reappear bug
+    o only delete old articles if max links > 0
+    o radio validation on add feed screen
+    o behavior of 'show more' link fixed at end of article list,
+      and on initialization
+    o fixed cross-user cached feed bug
+    o handle PHP 4 return values for strtotime()
+  db structure:
+    o break links table into <userid>_links for better performance
+    o added fields to user_prefs, _feeds
+
+
+October 16, 2007: version 0.81:
+  bugs:
+    o fixed a secure-login bug (feature was forced on)
+  features:
+    o preliminary support for a list view of unread articles
+    o support OPML import from Rojo and Flicker feeds
+
+
+June 7, 2007: version 0.80:
+  upgrades:
+    o use MagpieRSS 0.72
+    o use Snoopy 1.2.3 inside MagpieRSS
+    o code restructured
+  security:
+    o secure cookies with HMAC-SHA1
+    o secure login, add user, and change password if SSL available
+    o securely store login info in DB using salted SHA-1 hash
+    o strip all but allowed tags from feed descriptions using included kses
+  lots of new features:
+    o web install utility
+    o database prefixes
+    o use AJAX to expand descriptions, show additional links, and show status
+    o incremental push to browser for faster update
+    o support easier feed addition (just enter RSS link)
+    o added optional feed image caching and resizing with GD lib
+    o can delete empty categories
+    o can force update of feed
+    o style changes
+
+
+Aug 20, 2003: bug fixes:
+		o updated to function without register_globals on
+
+
+Aug 04, 2003: updates:
+		o changed timeout options - 5 or 10 minutes is too often
+		  to hit a source
+		o prettied up rendering for no site images
+
+
+Aug 03, 2003: new features:
+		o support added for pubDate in addition to dc:date
+		  if neither exist, the current time on the server is used
+		o if there's no title available, we use the description
+		  field, up to the first ':'
+
+	      bug fixes:
+		o if there aren't enough links in the db, we add filler links
+		  to keep the boxes all the same size
+		o fixed formatting on "more" page
+
+	      other:
+	      	o updated magpierss to the latest version
+
+
+Aug 02, 2003: bug fixes:
+		o rnews_config.inc renamed to rnews_config.php with security
+		  check added to keep anyone from reading the sql password...
+		o added sanity check that aborts execution if the userid entered
+		  doesn't exist in the database
+		o minor css stuff
+
+
+Aug 01, 2003: new features:
+		o we now use css for almost all layout - this lets us truncate
+		  too-long text for a cleaner layout
+		o default userid feature added - you can specify a user whose
+		  sources will be shown by default
+
+
+Jul 31, 2003: new features:
+		o we now parse dc:date and show it on the 'more' page
+		o css magic used to show links as read immeadiately with
+		  compliant browsers
+		o opml import/export!!!
+
+	      bug fixes:
+	      	o we don't let anyone do anything without a writable cache
+		  directory now
+
+
+Jun 30, 2003: bug fixes:
+		o fixed bug wherin the last_update field was not being created
+	      	  for new user link tables, and added code to retro-actively
+	      	  fix the problem for older users upon login
+
+	      	o updated all INSERT statements to explicitly specify column order
+
+Nov 29, 2004: new features:
+		o added atom support thanks to magpierss 0.7
+		o changed db structure to require only 3 tables
+		o changed redirect page to use header: Location
+		
+	      bug fixes:
+	        o eliminated use of now()
+		o added unique key to avoid duplicate post links

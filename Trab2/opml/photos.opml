@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<opml version="1.0">
+  <head>
+    <title>Photo Feeds</title>
+    <dateCreated>Sat, 04 Jul 2009 12:30:11 -0400</dateCreated>
+  </head>
+  <body>
+    <outline version="RSS" text="Nature" title="Nature" xmlUrl="http://www.w3wallpapers.com/wotd.php" htmlUrl="http://www.w3wallpapers.com/" category="Photos" type="rss" />
+    <outline version="RSS" text="Mighty Optical Illusions" title="Mighty Optical Illusions" xmlUrl="http://www.moillusions.com/feed/atom" htmlUrl="http://www.moillusions.com" category="Photos" type="rss" />
+    <outline version="RSS" text="Daily interesting photos - Flickr" title="Daily interesting photos - Flickr" xmlUrl="http://www.flourish.org/news/flickr-daily-interesting.xml" htmlUrl="http://www.flourish.org/flickr/" category="Photos" type="rss" />
+  </body>
+</opml>

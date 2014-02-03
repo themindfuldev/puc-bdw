@@ -1,0 +1,26 @@
+INSTALLATION INSTRUCTIONS
+-------------------------
+
+If you are upgrading, also see the instructions in UPGRADING.
+
+1. Untar rnews.tar.gz into a directory published by your web server that runs PHP
+   scripts this will create an rnews directory.  Life will be easiest if you preserve
+   file permissions, like this:  tar xzpvf rnews-x.xx.tar.gz
+
+2. Go to http://your.site/somedir/rnews/install.php
+
+3. Enter the configuration and follow the instructions.  In particular, see step 4.
+
+4. Remove read permissions from install.php, by one of:
+   a) removing install.php altogether
+   b) chmod o-rwx install.php
+   c) create .htaccess for apache that denies access:
+      <Files "install.php">
+        Order allow,deny
+        Deny from all
+      </Files>
+
+5. Remove write permissions from inc/config_user.php
+
+6. Add a user account and get started!
+

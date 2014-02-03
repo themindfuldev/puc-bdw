@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<opml version="1.0">
+  <head>
+    <title>News Feeds</title>
+    <dateCreated>Sat, 04 Jul 2009 21:19:37 -0400</dateCreated>
+  </head>
+  <body>
+    <outline version="RSS" text="CNN Top Stories" title="CNN Top Stories" xmlUrl="http://rss.cnn.com/rss/cnn_topstories.rss" htmlUrl="http://www.cnn.com/" category="News" type="rss" />
+    <outline version="RSS" text="NYT Tech" title="NYT Tech" xmlUrl="http://feeds.nytimes.com/nyt/rss/Technology" htmlUrl="http://www.nytimes.com/" category="News" type="rss" />
+    <outline version="RSS" text="NYT Science" title="NYT Science" xmlUrl="http://feeds.nytimes.com/nyt/rss/Science" htmlUrl="http://www.nytimes.com/" category="News" type="rss" />
+    <outline version="RSS" text="Reuters Top" title="Reuters Top" xmlUrl="http://feeds.reuters.com/reuters/topNews/" htmlUrl="http://today.reuters.com/" category="News" type="rss" />
+    <outline version="RSS" text="CNN World" title="CNN World" xmlUrl="http://rss.cnn.com/rss/cnn_world.rss" htmlUrl="http://edition.cnn.com/" category="News" type="rss" />
+    <outline version="RSS" text="MSNBC Tech" title="MSNBC Tech" xmlUrl="http://rss.msnbc.msn.com/id/3032117/device/rss/rss.xml" htmlUrl="http://www.msnbc.msn.com/" category="News" type="rss" />
+    <outline version="RSS" text="FoxNews world" title="FoxNews world" xmlUrl="http://feeds.foxnews.com/foxnews/world" htmlUrl="http://www.foxnews.com/" category="News" type="rss" />
+    <outline version="RSS" text="MSNBC Top Headlines" title="MSNBC Top Headlines" xmlUrl="http://rss.msnbc.msn.com/id/3032091/device/rss/rss.xml" htmlUrl="http://www.msnbc.msn.com/" category="News" type="rss" />
+    <outline version="RSS" text="Google Top News" title="Google Top News" xmlUrl="http://news.google.com/?ned=us&amp;output=rss" htmlUrl="http://news.google.com/?ned=us" category="News" type="rss" />
+  </body>
+</opml>

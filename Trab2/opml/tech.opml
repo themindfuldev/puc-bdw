@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<opml version="1.0">
+  <head>
+    <title>Tech Feeds</title>
+    <dateCreated>Sat, 04 Jul 2009 23:10:14 -0400</dateCreated>
+  </head>
+  <body>
+    <outline version="RSS" text="Slashdot" title="Slashdot" xmlUrl="http://rss.slashdot.org/Slashdot/slashdot" htmlUrl="http://slashdot.org/" category="Tech" type="rss" />
+    <outline version="RSS" text="Ars Technica" title="Ars Technica" xmlUrl="http://feeds.arstechnica.com/arstechnica/index/" htmlUrl="http://www.arstechnica.com" category="Tech" type="rss" />
+    <outline version="RSS" text="Lifehacker Top Articles" title="Lifehacker Top Articles" xmlUrl="http://lifehacker.com/tag/top/index.xml" htmlUrl="http://lifehacker.com" category="Tech" type="rss" />
+    <outline version="RSS" text="Rnews Project News" title="Rnews Project News" xmlUrl="http://sourceforge.net/export/rss2_projnews.php?group_id=83806" htmlUrl="http://sourceforge.net/projects/rnews/" category="Tech" type="rss" />
+    <outline version="RSS" text="Hacker News" title="Hacker News" xmlUrl="http://news.ycombinator.com/rss" htmlUrl="http://news.ycombinator.com/" category="Tech" type="rss" />
+    <outline version="RSS" text="O&#039;Reilly Radar" title="O&#039;Reilly Radar" xmlUrl="http://radar.oreilly.com/rss.xml" htmlUrl="http://radar.oreilly.com/" category="Tech" type="rss" />
+    <outline version="RSS" text="Yahoo! Buzz Log" title="Yahoo! Buzz Log" xmlUrl="http://buzzlog.buzz.yahoo.com/feeds/buzzlog.xml" htmlUrl="http://buzz.yahoo.com/buzzlog/" category="Tech" type="rss" />
+    <outline version="RSS" text="TechCrunch" title="TechCrunch" xmlUrl="http://feedproxy.google.com/TechCrunch" htmlUrl="http://www.techcrunch.com/" category="Tech" type="rss" />
+    <outline version="RSS" text="Wired Top Stories" title="Wired Top Stories" xmlUrl="http://www.wired.com/rss/index.xml" htmlUrl="http://www.wired.com/" category="Tech" type="rss" />
+    <outline version="RSS" text="Boing Boing" title="Boing Boing" xmlUrl="http://feeds.boingboing.net/boingboing/iBag" htmlUrl="http://www.boingboing.net/" category="Tech" type="rss" />
+  </body>
+</opml>

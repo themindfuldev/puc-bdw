@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<opml version="1.0">
+  <head>
+    <title>Deals Feeds</title>
+    <dateCreated>Tue, 07 Jul 2009 19:26:52 -0400</dateCreated>
+  </head>
+  <body>
+    <outline version="RSS" text="SlickDeals.net" title="SlickDeals.net" xmlUrl="http://feeds.feedburner.com/SlickdealsnetFP" htmlUrl="http://www.slickdeals.net/" category="Deals" type="rss" />
+    <outline version="RSS" text="Ben&#039;s Bargains" title="Ben&#039;s Bargains" xmlUrl="http://bensbargains.net/rss.xml/0" htmlUrl="http://www.bensbargains.net/" category="Deals" type="rss" />
+    <outline version="RSS" text="Fatwallet Hot Deals Forum" title="Fatwallet Hot Deals Forum" xmlUrl="http://feeds.feedburner.com/FatwalletHotDeals" htmlUrl="http://www.fatwallet.com/" category="Deals" type="rss" />
+    <outline version="RSS" text="Spoofee Deals" title="Spoofee Deals" xmlUrl="http://www.spoofee.com/rss.php" htmlUrl="http://www.spoofee.com/" category="Deals" type="rss" />
+    <outline version="RSS" text="dealnews" title="dealnews" xmlUrl="http://content.dealnews.com/dealnews/rss/todays-edition.xml" htmlUrl="http://dealnews.com/" category="Deals" type="rss" />
+  </body>
+</opml>
